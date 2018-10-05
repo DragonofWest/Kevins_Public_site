@@ -44,7 +44,7 @@ footer {
     font-size: 10px;/* smaller */
 }
 /* scrolling text  */
-<style>
+
 .example1 {
  height: 50px;	
  overflow: hidden;
@@ -89,4 +89,3 @@ footer {
  transform: translateX(-100%); 
  }
 }
-</style>
