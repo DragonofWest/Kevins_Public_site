@@ -1,0 +1,93 @@
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 40px;/* x.xrem  (rem is a unit of measure) */
+    color: rgba(22, 18, 80, 0.671);/* #xxxxxx */
+}
+
+h2 {
+    font-size: 24px;/* x.xrem */
+    text-align: left;
+    border-bottom: 1px solid #bbb;
+}
+p {   
+    text-indent: 50px;  
+}
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 900px;/* xxxpx (px = pixel is a unit of measure)  */
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: rgb(4, 4, 65);
+    color: whitesmoke;
+}
+
+header img {
+    width: 250px;
+    height: auto;
+    float: right;
+}
+
+footer {
+    font-size: 10px;/* smaller */
+}
+/* scrolling text  */
+
+.example1 {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+.example1 h3 {
+ font-size: 3em;
+ color: limegreen;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: example1 15s linear infinite;
+ -webkit-animation: example1 15s linear infinite;
+ animation: example1 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
