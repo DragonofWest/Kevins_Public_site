@@ -1,0 +1,59 @@
+/*color scheme: #7ac74f mantis, #a1cf6b pistachio, #fcff6c unmellow yellow, #ffad69 rajah, #e0c879 straw */
+body{
+    font-family: 'Cardo', serif;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 18px;
+}
+h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+header {
+    background-color: #7ac74f;
+    text-align: center;
+    padding: .5rem;
+    color: #ffffff;
+}
+
+header > img{
+    width: 150px;
+    height: auto;
+    vertical-align: middle;    
+}
+
+.headertext {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1rem
+
+}
+
+.headertext h1 {
+    font-size: 3rem;
+}
+
+.subheading {
+    font-size: 1.1rem;
+    color:#fcff6c;
+    font-style: italic;
+
+}
+
+.currentcondision {
+    display: inline-block;
+    margin: 1rem 0 1rem 5rem;
+    padding: 1.2rem;
+    vertical-align: middle;
+    color: white;
+    background-color: #a1cf6b;
+    border: 1pt solid #ffad69;
+    font-size: 1.2rem;
+    
+    
+}
+
+.currentcondision img{
+    width: 140px;
+    height: auto;
+    
+}
