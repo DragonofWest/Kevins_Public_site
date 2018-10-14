@@ -51,7 +51,10 @@ header > img{
     
     
 }
-
+.currentcondision p {
+    display: inline-block;
+    text-align: center
+    }
 .currentcondision img{
     width: 140px;
     height: auto;
