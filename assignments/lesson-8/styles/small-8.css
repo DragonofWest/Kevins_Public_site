@@ -1,0 +1,153 @@
+/* Color scheme includes #e7f0ed, #e7ffed (data rows) and #628ca6, #7fb9c2 with white and black. 
+    The font-family is Ubuntu, sans-serif.
+*/
+
+tr:nth-child(even) {background-color: #e7f0ed;}
+tr:nth-child(odd) {background-color: #e7ffed;}
+tr:first-child {background-color:#628ca6; color:white;}
+table {font-family: 'Ubuntu'sans-serif}
+thead, tfoot {background-color:#7fb9c2}        
+tfoot {size:3px;}
+td {text-align: center;}
+
+body{
+    font-family: 'Cardo', serif;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 18px;
+}
+h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+@media (max-width:800px) {
+    header {
+       background-color: #7ac74f;
+       text-align: center;
+       padding: .5rem;
+       color: #ffffff;
+       height: 23vw;
+       font-family: 'Cardo', serif;
+    }
+}
+@media (max-width:800px) {
+    header > img{
+        max-width: 14vw;
+        height: auto;
+        padding-right: 6rem;
+        top:25px;
+        left:2vm;
+        right:2vm;
+        float:left;
+    }
+}
+@media (max-width:800px) {
+    .headertext {
+        font-display: 'Cardo', serif;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 1rem
+    }
+}
+
+@media (max-width:800px) {
+    .headertext h1 {
+        font-size: 5.5vw;
+        color: whitesmoke;
+        font-family: 'Cardo', serif;
+    }
+}
+
+@media (max-width:800px) {
+    .subheading {
+        font-size: 3vw;
+        color:#fcff6c;
+        font-style: italic;
+        font-family: 'Frank Ruhl Libre', serif;
+    }
+}
+.currentcondision {
+    display: inline-block;
+    margin: 1rem 0 1rem 5rem;
+    padding: 1.2rem;
+    vertical-align: middle;
+    color: white;
+    font-size: 1.2rem;   
+}
+
+.currentcondision p {
+    display: inline-block;
+    text-align: center
+    }
+
+.currentcondision img{
+    width: 140px;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .townname h2{
+        font-family: 'Frank Ruhl Libre', serif;
+        text-align: center;
+        padding: .4rem;
+        color:#E0C879;
+        background-color: #7ac74f;
+        font-size: 4.5vw;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    h3 {
+        font-family: 'Frank Rahl Libre', serif;
+        font-size: 18px;
+        color:#7ac74f;
+    }
+}
+
+@media (max-width: 800px) {
+    .herobox{
+        position: relative;
+    }
+}
+.herobox img{
+    max-width: 100%;
+    padding: 0;
+}
+
+@media (max-width:800px) {
+    .weathersummary h3{
+        color:white;
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:800px) {
+    .weathersummary {
+        display: inline-block;
+        position: absolute;
+        background-color: rgba(160, 207, 107, 0.534) ;
+        padding: 10px;
+        line-height:0.5em;
+        width:20vw;
+        height:35vw;
+        left:20px;
+        top:20px;
+        z-index:1;
+        max-width: 50%;
+        max-height: 60%;
+        font-size: 2vw;
+        
+    }
+}
+
+@media (max-width: 800px) {
+    .menu, .forecast, .currentcondision img, .currentcondision p{
+    visibility: hidden;   
+        }
+}
+
+@media (max-width: 800px) {
+    nav{
+    visibility: hidden;   
+        }
+}

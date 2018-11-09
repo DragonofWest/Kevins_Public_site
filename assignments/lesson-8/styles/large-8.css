@@ -1,0 +1,164 @@
+body{
+    font-family: 'Cardo', serif;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 18px;
+}
+h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+header {
+    background-color: #7ac74f;
+    text-align: center;
+    padding: .5rem;
+    color: #ffffff;
+}
+
+header > img{
+    width: 150px;
+    height: auto;
+    vertical-align: middle;    
+}
+
+nav{
+    width: 100%; 
+    display:inline-block;
+    background-color: #ffad69;
+    text-align:center;
+}
+.menu ul{
+     margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    text-align:center;
+}  
+.menu li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.menu li a{
+    display:block;
+    text-align:center;
+    padding: 10px;
+}
+
+.headertext {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1rem
+
+}
+
+@media (min-width:801px) {
+    .headertext h1 {
+        font-size: 3.8vw;
+        color:#ffffff;
+    }
+}
+
+@media (min-width:801px) {
+    .subheading {
+        font-size: 1.1rem;
+        color:#fcff6c;
+        font-style: italic;
+    }
+}
+
+@media (min-width:801px) {
+    .currentcondision {
+        display: inline-block;
+        margin: .45rem 0 .45rem 2.3rem;
+        padding: 1.0rem;
+        vertical-align: middle;
+        color: white;
+        background-color: #a1cf6b;
+        border: 1pt solid #ffad69;
+        font-size: 1.1rem;
+    }   
+}
+
+.currentcondision p {
+    display: inline-block;
+    text-align: center
+    }
+
+.currentcondision img{
+    width: 140px;
+    height: auto;
+    padding:0;
+    display: inline-block;
+}
+
+.heropicture img{
+    display: block;
+}
+
+.townname h2{
+    font-family: 'Frank Ruhl Libre', serif;
+    text-align: center;
+    padding: .4rem;
+    color:#E0C879;
+    background-color: #7ac74f;
+}
+
+.forecast{
+    background-color: #7ac74f;
+    display:inline-block;
+    width:100%;
+    text-align:center;
+} 
+.forecast h3{
+    color:#FCFF6C;
+    font-family: 'Cardo', serif;
+    font-size:30px;
+}
+
+.forecast th{
+    text-align:center;
+    background-color:#FCFF6C;
+    }
+.forecast table{
+    display:inline-block;
+    border-collapse: collapse;
+}
+.forecast td{
+    border: 1px solid white;
+}
+
+.herobox {
+    position: relative;
+}
+
+.herobox img{
+    display: block;
+}
+
+@media (min-width:801px) {
+    .weathersummary h3 {
+        color:#FCFF6C;
+        font-size: 33px;
+    }
+}
+
+@media (min-width:801px) {
+    .weathersummary {
+        display:inline-block;
+        position: absolute;
+        margin-left:auto;
+        margin-right:auto;
+        background-color: rgba(160, 207, 107, 0.534);
+        padding: 10px;
+        line-height:0.5em;
+        width:280px;
+        height:340px;
+        left:20px;
+        top:20px;
+        z-index:1;
+        max-width: 50%;
+        max-height: 65%;
+        font-size: 18px;
+    }
+}
