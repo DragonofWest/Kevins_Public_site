@@ -2,15 +2,7 @@
     The font-family is Ubuntu, sans-serif.
 */
 
-tr:nth-child(even) {background-color: #e7f0ed;}
-tr:nth-child(odd) {background-color: #e7ffed;}
-tr:first-child {background-color:#628ca6; color:white;}
-table {font-family: 'Ubuntu'sans-serif}
-thead, tfoot {background-color:#7fb9c2}        
-tfoot {size:3px;}
-td {text-align: center;}
-
-body{
+/*body{
     font-family: 'Cardo', serif;
     font-family: 'Frank Ruhl Libre', serif;
     font-size: 18px;
@@ -18,6 +10,57 @@ body{
 h2 {
     font-family: 'Frank Ruhl Libre', serif;
 }
+-->*/
+
+body {font-family: Ubuntu, sans-serif;}
+
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+}
+/* Table Shadowing*/
+table
+{
+    box-shadow: 8px 8px 12px #628ca6;
+}
+thead
+{
+    background-color: #7fb9c2;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+tbody > tr > th {
+    background-color:#628ca6;
+    font-weight: bold;
+}
+/*alternates color in rows */
+tbody > tr:nth-child(even) {background-color: #e7f0ed;}
+tbody >tr:nth-child(odd) {background-color: #e7ffed;}
+/*selects single cells for designing */
+tbody > tr:nth-child(5) td:nth-child(3)
+{
+    background-color: #628ca6;
+    color: white;
+}
+tbody > tr:nth-child(1) 
+{
+    color: white;
+}
+tbody > tr:nth-child(6) td:nth-child(1)
+{
+    font-style: italic;
+}
+
+tfoot {
+    font-size:.65em;
+    background-color: #7fb9c2;
+}
+
+
+
 
 @media (max-width:800px) {
     header {
