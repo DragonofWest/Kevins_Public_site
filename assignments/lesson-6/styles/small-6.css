@@ -16,8 +16,7 @@ h2 {
        height: 23vw;
        font-family: 'Cardo', serif;
     }
-}
-@media (max-width:800px) {
+
     header > img{
         max-width: 14vw;
         height: auto;
@@ -27,25 +26,20 @@ h2 {
         right:2vm;
         float:left;
     }
-}
-@media (max-width:800px) {
+
     .headertext {
         font-display: 'Cardo', serif;
         display: inline-block;
         vertical-align: middle;
         padding: 1rem
     }
-}
 
-@media (max-width:800px) {
     .headertext h1 {
         font-size: 5.5vw;
         color: whitesmoke;
         font-family: 'Cardo', serif;
     }
-}
 
-@media (max-width:800px) {
     .subheading {
         font-size: 3vw;
         color:#fcff6c;
@@ -82,17 +76,13 @@ h2 {
         font-size: 4.5vw;
         padding-top: 0;
     }
-}
 
-@media (max-width: 800px) {
     h3 {
         font-family: 'Frank Rahl Libre', serif;
         font-size: 18px;
         color:#7ac74f;
     }
-}
 
-@media (max-width: 800px) {
     .herobox{
         position: relative;
     }
@@ -107,9 +97,7 @@ h2 {
         color:white;
         font-size: 2vw;
     }
-}
 
-@media (max-width:800px) {
     .weathersummary {
         display: inline-block;
         position: absolute;
@@ -126,15 +114,11 @@ h2 {
         font-size: 2vw;
         
     }
-}
 
-@media (max-width: 800px) {
     .menu, .forecast, .currentcondision img, .currentcondision p{
     visibility: hidden;   
         }
-}
 
-@media (max-width: 800px) {
     nav{
     visibility: hidden;   
         }
