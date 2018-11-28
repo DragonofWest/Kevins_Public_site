@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title> The Local Climate Channel </title>
+    <meta name="description" content="The Local CLimate Channel Home">
+    <link href="https://fonts.googleapis.com/css?family=Cardo%7CFrank+Ruhl+Libre" rel="stylesheet">
+    <link href= "styles/main.css" rel= "stylesheet">
+    <link href= "styles/large.css" rel= "stylesheet">
+    <link href= "styles/medium.css" rel= "stylesheet">
+    <link href= "styles/small.css" rel= "stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/windchill.js"></script>
+    
+</head>
+<body>
+    <!-- The header of the site-->
+    <header>
+        <img src="images/logo.jpg" alt="logo">
+        <section class="headertext">
+            <h1>The Local Climate Channel</h1>
+            <section class="subheading"><h4>Bringing You the Climate of Your Community</h4> </section>
+         </section>
+        <section class="currentconditions">
+              
+                <img src="images/rain.jpg" alt="current weather conditions" id="weather_icon">
+              
+                <h2><span id="current-condition1"></span></h2>
+                
+        </section>
+    </header>
+    <!--Navigation bar-->
+    <nav>
+      <button onclick="toggleMenu()"> &#9776;</button>
+        <ul id="menu" class="hide">
+            <li class= "active">
+              <a href="index.html" onclick="">Home</a>
+            </li>
+            <li>
+              <a href="preston.html">Preston</a>
+            </li>
+            <li>
+              <a href="sodasprings.html">Soda Springs</a>
+            </li>
+            <li>
+              <a href="fishhaven.html">Fish Haven</a>
+            </li>
+            <li>
+              <a href="stormcenter.html">Storm Center</a>
+            </li>
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+   
+    </nav>
+    <!------------- Content of the Page ------------------->
+    <section class= "townname">
+        <h1> The Home Page </h1>
+    </section>
+
+    <section class= "homegrid">
+        <div class="townGrid">
+            <section>
+                <h3>Preston</h3>
+                <p id="pdata"><span id="motto"></span>
+                <br>Year Founded:
+                <span id="year-founded"></span>
+                <br> Population:
+                <span id="population"></span>
+                <br> Annual Rainfal:
+                <span id="annualRainfall"></span></p>
+            </section>
+            <figure>
+                <img src="images/franklin-800.jpg" alt="Preston" class="prestonimg" sizes="30vw"
+                    srcset="images/franklin-400.jpg 400w, images/franklin-800.jpg 800w, images/franklin-1028.jpg 1028w">
+            </figure>
+        </div>
+        <div class="townGrid">
+            <section>
+                <h3>Soda Springs</h3>
+                <p id="ssdata"><span id="motto2"></span>
+                <br> Year Founded:
+                <span id="year-founded2"></span>
+                <br> Population:
+                <span id="population2"></span>
+                <br> Annual Rainfal:
+                <span id="annualRainfall2"></span></p>
+            </section>
+            <figure>
+                <img src="images/sodasprings800.jpg" alt="Soda Springs" class="sodaspringsimg" sizes="30vw"
+                    srcset="images/sodasprings400.jpg 400w, images/sodasprings800.jpg 800w, images/sodasprings1024.jpg 1024w">
+            </figure>
+        </div>
+        <div class="townGrid">
+            <section>
+                <h3>Fish Haven</h3>
+                <p id="fhdata"> <span id="motto3"></span>
+                <br> Year Founded:
+                <span id="year-founded3"></span>
+                <br> Population:
+                <span id="population3"></span>
+                <br> Annual Rainfal:
+                <span id="annualRainfall3"></span></p>
+            </section>
+            <figure>
+                <img src="images/fishhaven800.jpg" alt="Fish Haven" class="fishhavenimg" sizes="30vw"
+                    srcset="images/fishhaven400.jpg 400w, images/fishhaven800.jpg 800w, images/fishhaven1024.jpg 1024w">
+            </figure>
+        </div>
+    </section>
+    <script src="scripts/towninfo.js"></script>
+
+    <section class="sidearticle">
+        <h3>Tip of the Day</h3>
+        <p>The Local Climate Channel has your current and up to date weather information. 
+            Check back often for the latest. &#34;It is better to have people think you the 
+            fool than to open your mouth and remove all doubt.&#34;     
+        </p>
+    </section>
+<!---------map of the local region --------->
+    <section class="maps">    
+            <iframe src="https://www.google.com/maps/d/embed?mid=1TZdZzdhp8BGJ_wxxA1zTbQQtgnJ91GSG" width="640" height="480"></iframe>
+    </section>
+<!-----------Footer Content------------------>
+    <footer> 
+        <p> <span id="date"></span> |  Kevin Kelly  |  Ontario, California |  <a href= "https://openweathermap.org/" target="_blank">Weather Info Courtesy of Open Weather Map</a>  |  Terms of Use  | &#169;2018</p>
+        
+    </footer>
+    
+    <script src="scripts/currentDate.js"></script>
+</body>
+
+
+</html>
