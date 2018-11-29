@@ -1,0 +1,56 @@
+@media only screen and (min-width: 34.375em) and (max-width: 50em){    
+    /*  header styling  */
+      .forecast, .currentconditions img, .currentconditions h2{
+           display:none;
+       }
+
+    /* Navigation styling*/    
+       nav button{  /*hides the hamburger button */
+           display:none;
+       }
+       nav ul{
+           display: inline-block;
+       }
+       nav li{
+           display: inline-block;
+       }
+/* Gallary styling */
+
+       .grid{
+           grid-template-columns: 1fr 1fr;
+       }
+       .figcaption{
+           display:none;   
+       }
+
+   .stormcenter h1{
+       font-family: 'Cardo', Regular;
+       text-align: center;
+       padding: .5rem; 
+       color:black;
+       font-size: 4vw;
+       padding-top:0;
+   }
+  
+   /*-------Storm Center------*/
+ 
+   /*---------------------form----------------*/
+
+   /*-----------HomeGrid TownGrid ---------*/
+ 
+   .townarticle h3{
+       font-size:2vw;
+   }
+ /*---------- Map and contact styling---------------*/
+    .infogrid{
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    infogrid> .contact{
+        grid-area: contact;
+        grid-row-start:2;
+        grid-row-end:2;
+    }
+
+
+}

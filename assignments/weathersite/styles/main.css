@@ -1,0 +1,403 @@
+/*color scheme: #7ac74f mantis --header footer--
+                #a1cf6b pistachio --offset -- 
+                #fcff6c unmellow yellow --header text--,
+                #ffad69 rajah --menu bar--, 
+                #e0c879 straw --- text-- */
+/* main page styling*/
+body{
+    font-family: 'Frank Ruhl Libre', Regular;
+    font-size: 18px;
+}
+/* Header styling */
+header{
+    font-family: 'Cardo', Regular;    
+    background-color: #7ac74f;
+    text-align: center;
+    color: #fcff6c;
+    width:100%;
+    justify-content:center;
+    display:flex;  
+}
+header>img{
+    width:13vw;
+    height:auto;
+    align-self:flex-end;
+}
+.headertext{
+    font-family:'Cardo', Regular;
+    display: inline-block;
+    justify-content:space-around;
+}
+.headertext h1{
+    font-family:'Cardo', Regular;
+    font-size:5vw;
+    color: #fcff6c;
+}
+.subheading{
+    font-family:'Cardo', Regular;
+    font-size:2.3vw; 
+    color:#fcff6c; 
+    font-style:italic;
+}
+
+.currentconditions{
+    display: inline-block;
+    align-self:center;
+    color:white;
+    font-size: 1.5vw;
+}
+.currentconditions img{
+    width:10vw;
+    height:auto; 
+}
+.currentconditions h2{
+    font-family: 'Cardo', Regular;
+    float:right;
+}
+
+/* Navigation styling*/
+
+nav{
+    width: 100%; 
+    display:flex;
+    background-color: #ffad69;
+    text-align:center;
+    margin-left:0;
+    margin-right:0;
+    justify-content:space-between;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align:center;
+}  
+nav li {
+    text-align: center;
+}
+nav li a{
+    display:block;
+    text-align:center;
+    text-decoration: none;
+    color:black;   
+}
+
+nav ul li a {
+    border:none;
+    border-right:1px solid rgba(121, 199, 79, 0.5);
+    padding:.6rem 1rem;
+    Font-size: 2vw;
+}
+nav ul li.active a{ 
+    background-color:#a1cf6b; color:#000;
+}
+nav ul li a:hover{
+    color:white;
+}
+nav ul.hide {display:block;}
+
+/*--------Body of Site-------*/
+.townname h1{
+    font-family: 'Cardo', Regular;
+    text-align: center;
+    padding: .5rem; 
+    color: black;
+    font-size: 3.5vw;
+}
+h1{
+    font-family: "Cardo", Regular;
+    font-size: 40px;
+    color: black;
+}
+h2{
+    font-family: "Cardo", Regular;
+    font-size:25px;
+    color: black;
+}
+h3 {
+    font-family: "Cardo", Regular;
+    font-size:20px;
+    color:black;
+}
+/*--------weathersummary--------*/
+.weathersummary h3{
+    color:white;
+    font-size: 2vw;
+    margin:auto;
+}
+.weathersummary {
+    display: inline-block;
+    position: absolute;
+    background-color: rgba(160, 207, 107, 0.534);
+    padding: 10px;
+    line-height:0.5em;
+    width:30vw;
+    height:35vw;
+    left:20px;
+    top:12px;
+    z-index:1;
+    max-width: 20%;
+    max-height: 60%;
+    font-size: 1.5vw;
+    margin-left:10%;
+}
+
+.herobox{
+    position:relative;
+}
+.herobox img{
+    display:inline-block;
+    width: 75%;
+    height:auto;
+    margin-left: 10%;   
+}
+/*-----NOTSEEN----------*/
+.notseen{
+    display: none;
+}
+/*-------Forecast----------*/
+.forecast{
+    background-color: #a1cf6b;
+    display:inline-block;
+    width:100%;
+    text-align:center;
+} 
+.forecast h3{
+    color:#fcff6c;
+    font-family: 'Frank Ruhl Libre', Regular;
+    font-size:30px;
+    margin:0;
+}
+
+.forecast th{
+    text-align:center;
+    background-color:white;
+    }
+.forecast table{
+    display:inline-block;
+    border-collapse: collapse;
+}
+.forecast td{
+    border: 1px solid white;
+}
+
+/*------- Gallary styling ---------*/
+.gallery h1{
+    font-family: 'Cardo', Regular;
+    text-align: center;
+    padding: .5rem; 
+    color:black;
+    font-size: 3vw;
+    padding-top:0;
+}
+.grid{
+    display:grid;
+    column-gap:3px;
+    text-align:center;
+}
+.grid img{
+    width:100%; 
+}
+.grid img:hover {
+    box-shadow:5px 5px 5px gray;
+}
+
+/*-------Storm Center------*/
+.stormForm{
+    background-color:#EDEDED; 
+}
+.stormcenter h1{
+    font-family: 'Cardo', Regular;
+    text-align: center;
+    padding: .5rem; 
+    color:black;
+    font-size: 4vw;
+    padding-top:0;
+}
+
+/*-------------------form---------------*/
+form legend{
+    color:#7ac74f;
+    margin:0 1rem;
+    padding:0 .5rem;
+    font-size:4vw;
+}      
+form fieldset{
+    margin:2rem 0;
+    border: none;
+    padding:.5rem 2%;
+}
+form label.top, form div{
+    display:block;
+    padding-top:1rem;
+    color:rgb(17, 19, 102);
+    font-size:2vw;   
+}
+
+form label.top input, form label.top select{
+    -webkit-apprearance:none;
+    display:block;
+    font-size:1rem;
+    border:solid 1px #999;
+    border-radius:5px;
+    padding:.75rem; 
+    color:#555;
+    width:100%;
+    max-width:20rem;
+    background-color: rgba(0,0,0,0.1); 
+}
+form label.sbs{
+    display:block;
+    padding:.75rem 0;
+    color:#555;
+}
+
+form input.submitBtn{
+    border:none;
+    background-color:#7ac74f;
+    color: white;
+    border-radius: 10%;
+    padding:.75rem 1.5rem;
+    margin:0 0 2rem 2%;
+    width:96%;
+    max-width:20rem;
+}
+
+form label.top input:required{
+    border: red solid 3px;
+}
+
+form label.top input:required:valid{
+    border:green solid 3px;
+
+}
+textarea{
+    width:50%;
+    height:auto;
+}
+.thanks{
+    text-align:center;
+    font-size: 4vw;
+}
+.thanks1{
+    text-align:center;
+    font-size:2vw;
+}
+.stormType{
+    font-family: 'Frank Ruhl Libre', Regular;
+}
+.stormForm{
+    width:100%;
+}
+.rating{
+    font-size:3vw;
+}
+
+.ratingvalue{
+    font-size:3vw;
+}
+.sbs{
+    font-size:3vw; 
+}
+/*-----------HomeGrid TownGrid ---------*/
+.homegrid{
+    display:grid;
+    grid-template-columns: 1fr;
+    text-align:center;
+    align-content: center;
+    row-gap: 5px;
+    margin:10px;
+}
+.townGrid h3{
+    color:#7ac74f;
+    font-size:3vw;
+}
+.townGrid{
+    
+    border: 3px solid #7ac74f;
+}
+.townGrid img{
+    width:100%;
+}
+.townGrid p{
+    font-size:2vw;
+}
+
+
+/*----------side article --------------*/
+.sidearticle{
+    display:inline-block;
+    text-align:center;
+    border: 3px solid #7ac74f;
+    width:50%;
+    align-self:center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top:5px;
+
+}
+.sidearticle h3{
+    font-size:2vw;
+}
+
+.townarticle{
+    display:block;
+    text-align:center;
+    border: 3px solid #7ac74f;
+    width:75%;
+    align-self:center;
+     margin: auto;   
+    margin-bottom: 10px;
+    margin-top:5px;
+
+}
+.townarticle h3{
+    font-size:2vw;
+    display:inline-block;   
+}
+
+/*---------- Map and contact styling---------------*/
+.maps{
+    margin-left: 10px;
+    margin-top:5px;
+}
+.infogrid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr;
+   
+}
+infogrid> .map{
+    grid-area: map;
+    grid-column-start:1;
+    grid-column-end:1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+   
+}
+infogrid> .contact{
+    grid-area: contact;
+    grid-column-start:2;
+    grid-column-end:2;
+   
+}
+.contact{
+    text-align:center;
+}
+.contact h3{
+    font-size: 30px;
+}
+/* ------------Footer styling ------------*/
+footer {
+    background-color: #7ac74f;
+    height:50px;
+    text-align:center;
+    font-size:1.1vw;
+}
+
+/*  clearfix to keep container from colapsing*/
+.clearfix:after{
+    content:"";
+    display:table;
+    clear:both;
+}

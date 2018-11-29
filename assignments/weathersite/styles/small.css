@@ -1,0 +1,108 @@
+@media only screen and (max-width: 34.375em){
+    /*  header styling  */  
+            header{
+            height:25vw;
+            } 
+            header>img{
+            margin-top:3vw;
+            width:15vw;
+            height:15vw;
+            }    
+            .headertext{
+            justify-content: none;
+        }
+        .forecast, .currentconditions img, .currentconditions h2{
+            display:none;
+        }    
+
+        
+    
+     /* ----------Navigation styling----------------------*/   
+        nav{ 
+            display:flex;
+            text-align: start;
+        
+        }
+        nav button{
+            margin:.2rem 2%;
+            background-color: transparent;
+            border:none;
+            font-size:1.36rem;    
+        }
+        
+        nav.menu{
+        background-color:#ffad69;
+        font-family:'Frank Ruhl Libre', Regular;
+        height: 5vw; 
+        }
+        
+        nav ul li a{
+            
+            padding:.6rem 2%;
+            text-decoration:none;
+            color:black;
+            font-size:4vw;
+        
+        }
+        
+        nav ul.hide{ display:none;}
+        
+    
+    
+    /* Gallary styling */    
+
+        .grid{
+            display:flex;
+           flex-wrap: wrap;
+            
+            
+        }
+        .figcaption{
+            display:none;
+        }
+/*-------Storm Center------*/
+/*-----------------form--------------------*/
+form label.top, form div{
+    font-size:3vw;
+}
+        
+/*-----------HomeGrid TownGrid ---------*/  
+       
+        .townGrid h3{
+            font-size:5vw;
+        }
+        .townGrid p{
+            font-size:4vw;
+        }
+        
+/*----------side article --------------*/  
+        .sidearticle{
+            font-size:2.5vw;
+        }
+        .sidearticle h3{
+            font-size:4vw;
+        }
+        .townarticle{
+            font-size:2.5vw
+        }
+        .townarticle h3{
+            font-size:4vw;
+        }
+ /*---------- Map and contact styling---------------*/
+ .infogrid{
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr;
+}
+infogrid> .contact{
+    grid-area: contact;
+    grid-row-start:2;
+    grid-row-end:2;
+}
+
+
+         /*-----footer styling-------*/       
+        footer p{   
+            height:15vw;
+            font-size: 1.5vw;
+        }
+    }

@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title> Storm Center </title>
+    <meta name="description" content="The Storm Center Form">
+    <link href="https://fonts.googleapis.com/css?family=Cardo%7CFrank+Ruhl+Libre" rel="stylesheet">
+    <link href= "styles/main.css" rel= "stylesheet">
+    <link href= "styles/large.css" rel= "stylesheet">
+    <link href= "styles/medium.css" rel= "stylesheet">
+    <link href= "styles/small.css" rel= "stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="scripts/hamburger.js"></script>
+
+    
+</head>
+<body>
+    <!-- The header of the site-->
+    <header>
+            <img src="images/logo.jpg" alt="logo">
+            <section class="headertext">
+                <h1>The Local Climate Channel</h1>
+                <section class="subheading"><h4>Bringing You the Climate of Your Community</h4> </section>
+             </section>
+            <section class="currentconditions">
+                  
+                    <img src="images/rain.jpg" alt="current weather conditions" id="weather_icon">
+                  
+                    <h2><span id="current-condition1"></span></h2>
+                    
+            </section>
+        </header>
+
+<!--Navigation bar-->
+    <nav>
+        <button onclick="toggleMenu()"> &#9776;</button>
+          <ul id="menu" class="hide">
+              <li >
+                <a href="index.html" onclick="">Home</a>
+              </li>
+              <li>
+                <a href="preston.html">Preston</a>
+              </li>
+              <li>
+                <a href="sodasprings.html">Soda Springs</a>
+              </li>
+              <li>
+                <a href="fishhaven.html">Fish Haven</a>
+              </li>
+              <li class= "active">
+                <a href="stormcenter.html">Storm Center</a>
+              </li>
+              <li>
+                <a href="gallery.html">Gallery</a>
+              </li>
+            </ul>
+     
+    </nav>
+<!-----------Body Content------------------> 
+<section class= "stormcenter">
+    <h1> Report a Storm Near You</h1>
+  </section>
+  <main class="stormForm">
+    
+   <form method="get" action="thanks.html">
+       <fieldset>
+          <legend>Contact Information</legend>
+          <label class="top">Full Name*<input type="text" name= "fname" pattern="[A-Za-z\s]{5,}" required></label>
+          <label class="top">Email*<input type="email" name= "email" placeholder="someone@gmail.com" ></label>
+          <label class="top">Phone Number<input type="tel" name= "phone" placeholder="1235551234" required></label>
+          <Label class="top">Zip Code<input type="number" name="zipCode" required></Label>
+          
+      </fieldset>
+      <fieldset>
+              <legend>Storm Information</legend>
+              <label class="top">Storm Date<input type="date" name= "stormDate"></label>
+              <label class="top">Storm Type<input list="stormType" name="stormType"></label><br><br>
+           <datalist id="stormType">
+               <option value="Flash Flood">
+               <option value="Hail">
+               <option value="Hurricane">
+               <option value="Thunderstorm">
+               <option value="Tornado">
+           </datalist>
+              <label class="rating">Storm Severity (0-10) </label><input type="range" name="rating" value="5" min="0" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span><br><br>
+           <select name="region">
+             <option value="" selected disabled>Select Region</option>
+             <option value="fishHaven">Fish Haven</option>
+             <option value="preston">Preston</option>
+             <option value="sodaSprings">Soda Springs</option>
+          </select>
+          <div>Are You In Danger?</div>
+              <label class="sbs"><input type="radio" name="danger" value= "yes"> Yes</label>
+              <label class="sbs"><input type="radio" name="danger" value= "maybe"> Maybe</label>
+              <label class="sbs"><input type="radio" name="danger" value= "no"> No</label>
+          
+      </fieldset>  
+      <fieldset>
+          <legend>Additional Information</legend>
+          <textarea rows="5" cols="50" name="comments" ></textarea>
+
+      </fieldset> 
+      <input type="submit" value="Report The Storm" class="submitBtn">
+  </form> 
+
+</main>
+
+<!-----------Footer Content------------------>    
+    <footer> 
+        <p> <span id="date"></span> |  Kevin Kelly  |  Ontario, California |  <a href= "https://openweathermap.org/" target="_blank">Weather Info Courtesy of Open Weather Map</a>  |  Terms of Use  | &#169;2018</p>
+        
+    </footer>
+    
+    <script src="scripts/currentDate.js"></script>
+</body>
+
+
+</html>

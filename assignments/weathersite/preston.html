@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title> Preston </title>
+    <meta name="description" content="Preston">
+    <link href="https://fonts.googleapis.com/css?family=Cardo%7CFrank+Ruhl+Libre" rel="stylesheet">
+    <link href= "styles/main.css" rel= "stylesheet">
+    <link href= "styles/large.css" rel= "stylesheet">
+    <link href= "styles/medium.css" rel= "stylesheet">
+    <link href= "styles/small.css" rel= "stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/windchill.js"></script>
+    
+</head>
+<body>
+    <!-- The header of the site-->
+    <header>
+            <img src="images/logo.jpg" alt="logo">
+            <section class="headertext">
+                <h1>The Local Climate Channel</h1>
+                <section class="subheading"><h4>Bringing You the Climate of Your Community</h4> </section>
+            </section>
+            <section class="currentconditions">
+                  
+                    <img src="images/rain.jpg" alt="current weather conditions" id="weather_icon">
+                  
+                    <h2><span id="currentcond"></span></h2>
+                    
+            </section>
+        </header>
+<!--Navigation bar-->
+    <nav>
+        <button onclick="toggleMenu()"> &#9776;</button>
+        <ul id="menu" class="hide">
+            <li>
+                <a href="index.html" onclick="">Home</a>
+            </li>
+            <li class= "active">
+                <a href="preston.html">Preston</a>
+            </li>
+            <li>
+                <a href="sodasprings.html">Soda Springs</a>
+            </li>
+            <li>
+                <a href="fishhaven.html">Fish Haven</a>
+            </li>
+            <li>
+                <a href="stormcenter.html">Storm Center</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+        </ul>
+     
+    </nav>
+<!---------------Content---------------------------->    
+    <section class= "townname">
+            <h1> Preston</h1>
+    </section>
+    <div class="herobox">
+        <img src="images/franklin-800.jpg" alt="Preston picture" sizes="75vw" srcset= "images/franklin-400.jpg 400w, images/franklin-800.jpg 800w, images/franklin-1028.jpg 1028w" class="preston-image">
+        <section class="weathersummary">
+            <h3>Weather Summary</h3>
+            <p class="label">Currently:<span id="current-condition"></span></p>
+            <p class="label">Temperature:<span id="deg"> &deg;F</span></p>
+            <p class="label">Humidity:<span id="humidity"></span> %</p>
+            <p class="label">Wind Speed:<span id="mph"> mph</span></p>
+            <p class="label">Wind Chill:<span id="output"></span></p>
+        </section>
+    </div>
+              <section class="townarticle">
+                <h3>Preston Events</h3>
+                <p>Come one come all to the Festival of Lights! This annual festival is held every year from the day after Thanksgiving
+                    until December 31st. It was orginally started by Wanye Bell and Walter Ross two local business men. Do not miss this 
+                    family friendly event. Enjoy the fireworks, lights and parades.
+                </p>
+            </section>
+            <section class="forecast">
+                <h3>5 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th><span id="tomorrow"></span></th>
+                            <th><span id="twodays"></span></th>
+                            <th><span id="threedays"></span></th>
+                            <th><span id="fourdays"></span></th>
+                            <th><span id="fivedays"></span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <th>Forecast</th>
+                          <td><span id="p-temp1"></span>&deg;F</td>
+                          <td><span id="p-temp2"></span>&deg;F</td>
+                          <td><span id="p-temp3"></span>&deg;F</td>
+                          <td><span id="p-temp4"></span>&deg;F</td>
+                          <td><span id="p-temp5"></span>&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            <script src="scripts/daysofweek.js"></script> 
+            <script src="scripts/fivedayweather.js"></script>
+            </section> 
+<!---------map of the local region --------->
+<section class="infogrid">
+        <section class="maps">    
+                <iframe src="https://www.google.com/maps/d/embed?mid=18-5aAP4O3BwTCKqw8Ov7ZoNeyGuZf8kp" width="480" height="480"></iframe>        </section>
+        <section class="contact">
+            <h3>Contact Information</h3>
+            <p>Phone Number:<br>555-999-1234<br>
+              Email:<br> info@climatechannel.com<br>
+              Follow us on:<br> Facebook, Twitter, Instagram.
+            </p>
+        </section>
+    </section>
+
+
+<!-----------Footer Content------------------>
+    <footer> 
+        <p> <span id="date"></span> |  Kevin Kelly  |  Ontario, California |  <a href= "https://openweathermap.org/" target="_blank">Weather Info Courtesy of Open Weather Map</a>  |  Terms of Use  | &#169;2018</p>
+        
+    </footer>
+    
+    <script src="scripts/currentDate.js"></script>
+</body>
+
+
+</html>

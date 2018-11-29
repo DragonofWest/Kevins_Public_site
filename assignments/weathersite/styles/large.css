@@ -1,0 +1,42 @@
+@media only screen and (min-width:50em){
+    /*  header styling  */
+
+    /* Navigation styling*/
+  
+    nav button{  /*hides the hamburger button */
+      display:none;
+  }
+  nav ul{
+      display: inline-block;
+  }
+  nav li{
+      display: inline-block;
+  }    
+      
+      
+      .weathersummary {
+          margin-right:auto;
+
+      }
+    /* Gallary styling */  
+      
+      .grid{
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      figcaption{
+          font-size: 2vw;
+      }
+
+      /*-------Storm Center------*/
+      /*-------------------form---------------*/
+      
+
+      /*-----------HomeGrid TownGrid ---------*/
+      .homegrid{
+          grid-template-columns: 1fr 1fr 1fr;
+          justify-content:center;
+          column-gap:40px;    
+        }
+
+      
+    }

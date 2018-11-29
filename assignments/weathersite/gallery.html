@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title> The Gallery </title>
+  <meta name="description" content="Photo Gallery">
+  <link href="https://fonts.googleapis.com/css?family=Cardo%7CFrank+Ruhl+Libre" rel="stylesheet">
+  <link href= "styles/main.css" rel= "stylesheet">
+  <link href= "styles/large.css" rel= "stylesheet">
+  <link href= "styles/medium.css" rel= "stylesheet">
+  <link href= "styles/small.css" rel= "stylesheet">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="scripts/hamburger.js"></script>
+
+</head>
+
+<body>
+    <!-- The header of the site-->
+    <header>
+            <img src="images/logo.jpg" alt="logo">
+            <section class="headertext">
+                <h1>The Local Climate Channel</h1>
+                <section class="subheading"><h4>Bringing You the Climate of Your Community</h4> </section>
+             </section>
+            <section class="currentconditions">
+                  
+                    <img src="images/rain.jpg" alt="current weather conditions" id="weather_icon">
+                  
+                    <h2><span id="current-condition1"></span></h2>
+                    
+            </section>
+        </header>
+
+<!--Navigation bar-->
+<nav>
+        <button onclick="toggleMenu()"> &#9776;</button>
+          <ul id="menu" class="hide">
+              <li>
+                <a href="index.html" onclick="">Home</a>
+              </li>
+              <li>
+                <a href="preston.html">Preston</a>
+              </li>
+              <li>
+                <a href="sodasprings.html">Soda Springs</a>
+              </li>
+              <li>
+                <a href="fishhaven.html">Fish Haven</a>
+              </li>
+              <li>
+                <a href="stormcenter.html">Storm Center</a>
+              </li>
+              <li class= "active">
+                <a href="gallery.html">Gallery</a>
+              </li>
+            </ul>
+     
+      </nav>
+<!-----------Gallery Content------------------>
+  <section class= "gallery">
+    <h1> Photo Gallery</h1>
+    <div class="grid">
+        <figure>
+          <a href="images/autumncolors.jpg">
+            <img src="images/autumncolors400.jpg" alt="Autumn Colors" sizes="50vw"
+              srcset="images/autumncolors200.jpg 200w, images/autumncolors400.jpg 400w, images/autumncolors800.jpg 800w, images/autumncolors.jpg 3840w " >
+            </a>
+              <figcaption class="figcaption">The Autumn Colors</figcaption>
+          
+        </figure>
+        <figure>
+          <a href="images/castle.jpg">
+            <img src="images/castle400.jpg" alt="Caslte" sizes="50vw" 
+              srcset="images/castle200.jpg 200w, images/castle400.jpg 400w, images/castle800.jpg 800w, images/castle.jpg 3840w">
+            </a>
+              <figcaption class="figcaption">Sheep Farming</figcaption>
+          
+        </figure>
+        <figure>
+          <a href="images/cherryspring.jpg">
+            <img src="images/cherryspring400.jpg" alt="Cherry Blossoms" sizes="50vw"
+                srcset="images/cherryspring200.jpg 200w, images/cherryspring400.jpg 400w, images/cherryspring800.jpg 800w, images/cherryspring.jpg 1920w">
+            </a>
+                <figcaption class="figcaption">Spring Time</figcaption>
+          
+        </figure>
+        <figure>
+          <a href="images/lightning.jpg">  
+            <img src="images/lightning400.jpg" alt="Lightning" sizes="50vw"
+              srcset="images/lightning200.jpg 200w, images/lightning400.jpg 400w, images/lightning800.jpg 800w, images/lightning.jpg 1680w">
+           </a> 
+              <figcaption class="figcaption">Lightning in the Sky</figcaption>
+          
+        </figure>
+        <figure>
+          <a href="images/snowymoutain.jpg">
+            <img src="images/snowymoutain400.jpg" alt="Snowy Mountain" sizes="50vw"
+              srcset="images/snowymoutain200.jpg 200w, images/snowymoutain400.jpg 400w, images/snowymoutain800.jpg 800w, images/snowymoutain.jpg 1920w">
+          </a>
+              <figcaption class="figcaption">Snowy Mountain Peaks</figcaption>
+          
+        </figure>
+        <figure>
+          <a href="images/waterfalls.jpg">
+            <img src="images/waterfalls400.jpg" alt="Waterfalls" sizes="50vw"
+              srcset="images/waterfalls200.jpg 200w, images/waterfalls400.jpg 400w, images/waterfalls800.jpg 800w, images/waterfalls.jpg 5000w">
+          </a>
+              <figcaption class="figcaption">Summer Waterfall</figcaption>
+          
+        </figure>
+
+    </div>
+
+
+
+  </section>  
+
+<!-----------Footer Content------------------>    
+    <footer> 
+        <p> <span id="date"></span> |  Kevin Kelly  |  Ontario, California |  <a href= "https://openweathermap.org/" target="_blank">Weather Info Courtesy of Open Weather Map</a>  |  Terms of Use  | &#169;2018</p>
+        
+    </footer>
+    
+    <script src="scripts/currentDate.js"></script>
+</body>
+
+
+</html>

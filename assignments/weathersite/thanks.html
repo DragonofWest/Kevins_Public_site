@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title> Storm Center Confermation </title>
+    <meta name="description" content="Storm Confermation">
+    <link href="https://fonts.googleapis.com/css?family=Cardo%7CFrank+Ruhl+Libre" rel="stylesheet">
+    <link href= "styles/main.css" rel= "stylesheet">
+    <link href= "styles/large.css" rel= "stylesheet">
+    <link href= "styles/medium.css" rel= "stylesheet">
+    <link href= "styles/small.css" rel= "stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="scripts/hamburger.js"></script>
+
+    
+</head>
+<body>
+    <!-- The header of the site-->
+    <header>
+            <img src="images/logo.jpg" alt="logo">
+            <section class="headertext">
+                <h1>The Local Climate Channel</h1>
+                <section class="subheading"><h4>Bringing You the Climate of Your Community</h4> </section>
+             </section>
+            <section class="currentconditions">
+                  
+                    <img src="images/rain.jpg" alt="current weather conditions" id="weather_icon">
+                  
+                    <h2><span id="currentcond"></span></h2>
+                    
+            </section>
+        </header>
+
+<!--Navigation bar-->
+    <nav>
+        <button onclick="toggleMenu()"> &#9776;</button>
+          <ul id="menu" class="hide">
+              <li >
+                <a href="index.html" onclick="">Home</a>
+              </li>
+              <li>
+                <a href="preston.html">Preston</a>
+              </li>
+              <li>
+                <a href="sodasprings.html">Soda Springs</a>
+              </li>
+              <li>
+                <a href="fishhaven.html">Fish Haven</a>
+              </li>
+              <li >
+                <a href="stormcenter.html">Storm Center</a>
+              </li>
+              <li>
+                <a href="gallery.html">Gallery</a>
+              </li>
+            </ul>
+     
+    </nav>
+<!-----------Body Content------------------> 
+<main>
+    <h2 class="thanks">Storm Report Received</h2>
+        <p class="thanks1">Thanks for submitting your storm report. We are greatful for your time to let us know.</p>
+    
+</main>
+<!-----------Footer Content------------------>    
+<footer> 
+        <p> <span id="date"></span> |  Kevin Kelly  |  Ontario, California |  <a href= "https://openweathermap.org/" target="_blank">Weather Info Courtesy of Open Weather Map</a>  |  Terms of Use  | &#169;2018</p>
+        
+    </footer>
+    
+    <script src="scripts/currentDate.js"></script>
+</body>
+
+
+</html>
