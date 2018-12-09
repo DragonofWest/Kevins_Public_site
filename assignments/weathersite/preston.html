@@ -21,16 +21,16 @@
 <body>
     <!-- The header of the site-->
     <header>
-            <img src="images/logo.jpg" alt="logo">
+            <img src="images/logo.png" alt="logo">
             <section class="headertext">
                 <h1>The Local Climate Channel</h1>
                 <section class="subheading"><h4>Bringing You the Climate of Your Community</h4> </section>
             </section>
             <section class="currentconditions">
                   
-                    <img src="images/rain.jpg" alt="current weather conditions" id="weather_icon">
+                    <img src="images/rain.png" alt="current weather conditions" id="weather_icon">
                   
-                    <h2><span id="currentcond"></span></h2>
+                    <h2>It is&#58;&#32;<span id="currentcond"></span></h2>
                     
             </section>
         </header>
@@ -59,7 +59,8 @@
         </ul>
      
     </nav>
-<!---------------Content---------------------------->    
+    <main>
+<!--Content-->    
     <section class= "townname">
             <h1> Preston</h1>
     </section>
@@ -108,10 +109,11 @@
             <script src="scripts/daysofweek.js"></script> 
             <script src="scripts/fivedayweather.js"></script>
             </section> 
-<!---------map of the local region --------->
-<section class="infogrid">
-        <section class="maps">    
-                <iframe src="https://www.google.com/maps/d/embed?mid=18-5aAP4O3BwTCKqw8Ov7ZoNeyGuZf8kp" width="480" height="480"></iframe>        </section>
+<!--map of the local region -->
+    <div class="infogrid">
+        <div class="maps">    
+                <iframe src="https://www.google.com/maps/d/embed?mid=18-5aAP4O3BwTCKqw8Ov7ZoNeyGuZf8kp" width="480" height="480"></iframe>        
+        </div>
         <section class="contact">
             <h3>Contact Information</h3>
             <p>Phone Number:<br>555-999-1234<br>
@@ -119,10 +121,10 @@
               Follow us on:<br> Facebook, Twitter, Instagram.
             </p>
         </section>
-    </section>
+    </div>
+    </main>
 
-
-<!-----------Footer Content------------------>
+<!--Footer Content-->
     <footer> 
         <p> <span id="date"></span> |  Kevin Kelly  |  Ontario, California |  <a href= "https://openweathermap.org/" target="_blank">Weather Info Courtesy of Open Weather Map</a>  |  Terms of Use  | &#169;2018</p>
         

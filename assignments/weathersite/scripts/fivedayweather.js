@@ -18,7 +18,7 @@ forecastRequest.onload= function() {
 };
 
 /* Soda SPRING 5DAY*/
-var ssforecastweatherRequest= new XMLHttpRequest();
+var ssforecastRequest= new XMLHttpRequest();
 var ssforecastapiURL= "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=93fbe2520d7c4cd0113025de258c34ad";
 
 ssforecastRequest.open("GET", ssforecastapiURL, true);

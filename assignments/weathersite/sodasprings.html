@@ -21,16 +21,16 @@
 <body>
     <!-- The header of the site-->
     <header>
-            <img src="images/logo.jpg" alt="logo">
+            <img src="images/logo.png" alt="logo">
             <section class="headertext">
                 <h1>The Local Climate Channel</h1>
                 <section class="subheading"><h4>Bringing You the Climate of Your Community</h4> </section>
              </section>
             <section class="currentconditions">
                   
-                    <img src="images/rain.jpg" alt="current weather conditions" id="SSweather_icon">
+                    <img src="images/rain.png" alt="current weather conditions" id="SSweather_icon">
                   
-                    <h2><span id="SScurrentcond"></span></h2>
+                    <h2>It is&#58;&#32;<span id="SScurrentcond"></span></h2>
                     
             </section>
         </header>
@@ -60,7 +60,8 @@
             </ul>
      
       </nav>
-<!-----------Content----------------------->
+<main>
+<!--Content-->
 <section class= "townname">
     <h1> Soda Springs</h1>
 </section>
@@ -74,16 +75,7 @@
     <p class="label">Wind Speed:<span id="SSmph"> mph</span></p>
     <p class="label">Wind Chill:<span id="output"></span></p>
 </section>
-<section class="notseen">
-  <p>
-      <span id="FHdeg"> &deg;F</span><span id="deg"> &deg;F</span>
-      <span id="FHcurrent-condition"></span><span id="current-condition"></span>
-      <span id="FHhumidity"></span><span id="humidity"></span>
-      <span id="FHmph"></span><span id="mph"></span>
-      <span id="FHcurrentcond"></span><span id="currentcond"></span>
-      <span id="FHweather_icon"></span><span id="weather_icon"></span>
-  </p>
-</section>
+
 </div>
       <section class="townarticle">
         <h3>Soda Springs Events</h3>
@@ -121,19 +113,21 @@
     <script src="scripts/daysofweek.js"></script> 
     <script src="scripts/fivedayweather.js"></script>
     </section>
-<!-------------map and contact information--->
-    <section class="infogrid">
-      <section class="maps">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1HfOosp7Ip3-SIvtGfIFbnaNuqCSeZkAq" width="480" height="480"></iframe>      </section>
-      <section class="contact">
+<!--map and contact information-->
+    <div class="infogrid">
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1HfOosp7Ip3-SIvtGfIFbnaNuqCSeZkAq" width="480" height="480"></iframe>
+        </div>
+        <section class="contact">
           <h3>Contact Information</h3>
           <p>Phone Number:<br>555-999-1234<br>
             Email:<br> info@climatechannel.com<br>
             Follow us on:<br> Facebook, Twitter, Instagram.
           </p>
-      </section>
-    </section>
-<!-----------Footer Content------------------>    
+        </section>
+    </div>
+</main>
+<!--Footer Content-->    
     <footer> 
         <p> <span id="date"></span> |  Kevin Kelly  |  Ontario, California |  <a href= "https://openweathermap.org/" target="_blank">Weather Info Courtesy of Open Weather Map</a>  |  Terms of Use  | &#169;2018</p>
         

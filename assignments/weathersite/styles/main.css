@@ -84,7 +84,6 @@ nav li a{
 
 nav ul li a {
     border:none;
-    border-right:1px solid rgba(121, 199, 79, 0.5);
     padding:.6rem 1rem;
     Font-size: 2vw;
 }
@@ -275,6 +274,9 @@ textarea{
     width:50%;
     height:auto;
 }
+form {
+    margin-left: 50px;
+}
 .thanks{
     text-align:center;
     font-size: 4vw;
@@ -326,7 +328,7 @@ textarea{
 
 /*----------side article --------------*/
 .sidearticle{
-    display:inline-block;
+    display:block;
     text-align:center;
     border: 3px solid #7ac74f;
     width:50%;
@@ -334,6 +336,7 @@ textarea{
     margin-bottom: 10px;
     margin-left: 10px;
     margin-top:5px;
+    margin: auto;
 
 }
 .sidearticle h3{

@@ -23,8 +23,13 @@
       .grid{
           grid-template-columns: 1fr 1fr 1fr;
       }
+      .grid img {
+        box-shadow:3px 3px 3px gray;
+    }
+   
       figcaption{
           font-size: 2vw;
+          box-shadow:3px 3px 3px gray;
       }
 
       /*-------Storm Center------*/

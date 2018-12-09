@@ -4,7 +4,7 @@
 /* Montpelier near Fish Haven Idaho map #5601299  */
 /*-----------------Preston---------------------------------------*/
 var weatherRequest = new XMLHttpRequest();
-var apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=93fbe2520d7c4cd0113025de258c34ad"
+var apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=93fbe2520d7c4cd0113025de258c34ad"
 
 weatherRequest.open("GET", apiURL, true);
 weatherRequest.responseType = "text";
@@ -28,7 +28,7 @@ weatherRequest.onload = function () {
 
 /*-------------Soda Springs-----------------------------*/
 var SSweatherRequest = new XMLHttpRequest();
-var SSapiURL = "http://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=93fbe2520d7c4cd0113025de258c34ad"
+var SSapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=93fbe2520d7c4cd0113025de258c34ad"
 
 SSweatherRequest.open("GET", SSapiURL, true);
 SSweatherRequest.responseType = "text";
@@ -52,7 +52,7 @@ SSweatherRequest.onload = function () {
 
 /*------------------Fish Haven--------------------------- */
 var FHweatherRequest = new XMLHttpRequest();
-var FHapiURL = "http://api.openweathermap.org/data/2.5/weather?id=5601299&units=imperial&APPID=93fbe2520d7c4cd0113025de258c34ad"
+var FHapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5601299&units=imperial&APPID=93fbe2520d7c4cd0113025de258c34ad"
 
 FHweatherRequest.open("GET", FHapiURL, true);
 FHweatherRequest.responseType = "text";
@@ -68,7 +68,7 @@ FHweatherRequest.onload = function () {
         document.getElementById("FHhumidity").innerHTML= FHweatherData.main.humidity;
         document.getElementById("FHmph").innerHTML= FHweatherData.wind.speed;
     
-        var FHiconcode=weatherData.weather[0].icon;
+        var FHiconcode=FHweatherData.weather[0].icon;
         var FHicon_path= "https://openweathermap.org/img/w/"+ FHiconcode + ".png";
         document.getElementById("FHweather_icon").src= FHicon_path;
 }

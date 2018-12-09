@@ -53,12 +53,7 @@
 
         .grid{
             display:flex;
-           flex-wrap: wrap;
-            
-            
-        }
-        .figcaption{
-            display:none;
+           flex-wrap: wrap; 
         }
 /*-------Storm Center------*/
 /*-----------------form--------------------*/
