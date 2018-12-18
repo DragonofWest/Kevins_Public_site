@@ -6,6 +6,10 @@
 /* main page styling */
 body{
     font-family: 'Sumana', serif; 
+    display:block;
+}
+.title{
+    text-align: center;
 }
 /* Header styling */
 header{
@@ -97,9 +101,25 @@ footer {
     background-color: #93E5AB;
     height:50px;
     text-align:center;
-    font-size:1.1vw;
+    font-size:1.3vw;
 }
-
+/* ---- Temple page ----- */
+.latemp{
+    background-color:#1BE7FF;
+    border: 1px solid #000;
+}
+.redlandstemp {
+    background-color: #95F0A4;
+    border: 1px solid #000;
+}
+.newporttemp{
+    background-color: #1BE7FF;
+    border: 1px solid #000;
+}
+.sdtemp{
+    background-color: #95F0A4;
+    border: 1px solid #000;
+}
 /*  clearfix to keep container from colapsing*/
 .clearfix:after{
     content:"";
