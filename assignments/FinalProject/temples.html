@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Temples | Heavenly Hosts Inns</title>
+        <meta name="description" content="Temples ">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Sumana" rel="stylesheet">
+        <link href= "css/main.css" rel= "stylesheet">
+        <link href= "css/large.css" rel= "stylesheet">
+        <link href= "css/medium.css" rel= "stylesheet">
+        <link href= "css/small.css" rel= "stylesheet">
+        <script src="js/hamburger.js"></script>
+        <script src="js/weatherapi.js"></script>
+        <script src="js/closures.js"></script>
+        <!-- -->
+    </head>
+    <body>
+        <!--header-->
+        <header class="clearfix">
+            <img src="images/logo2120.png" alt="site logo">
+            <section class="headertext outlinetext">
+                <h1>Welcome to Heavenly Hosts Inns</h1>
+                <section class="subheading"><h4>Making Temple experiances out of this World</h4>
+                </section> 
+            </section>
+        </header>
+        <!--navigation-->
+        <nav>
+            <button onclick="toggleMenu()"> &#9776;</button>
+            <ul id="menu" class="hide">
+                <li>
+                  <a href="index.html" onclick="">Home</a>
+                </li>
+                <li>
+                  <a href="reservations.html">Reservations</a>
+                </li>
+                <li class= "active">
+                  <a href="temples.html">Temples</a>
+                </li>
+                <li>
+                  <a href="services.html">Services</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!--content-->
+        <main>
+            <div class="latemp">
+                <img src="images/LATemplePan300.jpg" alt="Los Angeles Temple Panoramice" size="100%" srcset="images/LATemplePan300.jpg 300w, images/LATemplePan600.jpg 600w, images/LATemplePan800.jpg 800w, images/LATemplePan1000.jpg 1000w">
+                <section class="tempinfo">
+                    <h4>Temple Closures</h4>
+                    <p><span id=la1></span></p>
+                    <p><span id=la2></span></p>
+                    <p><span id=la3></span></p>
+                    <p><span id=la4></span></p>
+                    <p><span id=la5></span></p>
+                    <p><span id=la6></span></p>
+                    <p><span id=la7></span></p>
+                    <p><span id=la8></span></p>
+                    <p><span id=la9></span></p>
+                    <p><span id=la10></span></p>
+                    <section class="weathersummary">
+                        <h3>Weather Summary</h3>
+                        <p class="label">Currently:<span id="current-condition"></span></p>
+                        <p class="label">Temperature:<span id="deg"> &deg;F</span></p>
+                        <p class="label">Humidity:<span id="humidity"></span> %</p>
+                        <p class="label">Wind Speed:<span id="mph"> mph</span></p>
+                    </section>
+                </section>
+            </div>
+            <div class="redlandstemp">
+                <img src="images/RedlandsPan300.jpg" alt="Los Angeles Temple Panoramice" size="100%" srcset="images/RedlandsPan300.jpg 300w, images/RedlandsPan600.jpg 600w, images/RedlandsPan800.jpg 800w, images/RedlandsPan1000.jpg 1000w">
+                <section class="tempinfo">
+                    <h4>Temple Closures</h4>
+                    <p><span id=rl1></span></p>
+                    <p><span id=rl2></span></p>
+                    <p><span id=rl3></span></p>
+                    <p><span id=rl4></span></p>
+                    <p><span id=rl5></span></p>
+                    <p><span id=rl6></span></p>
+                    <p><span id=rl7></span></p>
+                    <p><span id=rl8></span></p>
+                    <p><span id=rl9></span></p>
+                    <p><span id=rl10></span></p>
+                    <p><span id=rl11></span></p>
+                    
+                    <section class="weathersummary">
+                        <h3>Weather Summary</h3>
+                        <p class="label">Currently:<span id="RLcurrent-condition"></span></p>
+                        <p class="label">Temperature:<span id="RLdeg"> &deg;F</span></p>
+                        <p class="label">Humidity:<span id="RLhumidity"></span> %</p>
+                        <p class="label">Wind Speed:<span id="RLmph"> mph</span></p>
+                    </section>
+                </section>
+            </div >
+            <div  class="newporttemp">
+                <img src="images/NewportPan300.jpg" alt="Los Angeles Temple Panoramice" size="100%" srcset="images/NewportPan300.jpg 300w, images/NewportPan600.jpg 600w, images/NewportPan800.jpg 800w, images/NewportPan1000.jpg 1000w">
+                <section class="tempinfo">
+                    <h4>Temple Closures</h4>
+                    <p><span id=np1></span></p>
+                    <p><span id=np2></span></p>
+                    <p><span id=np3></span></p>
+                    <p><span id=np4></span></p>
+                    <p><span id=np5></span></p>
+                    <p><span id=np6></span></p>
+                    <p><span id=np7></span></p>
+                    <p><span id=np8></span></p>
+                    <p><span id=np9></span></p>
+                    <p><span id=np10></span></p>
+                    <p><span id=np11></span></p>
+                    <p><span id=np12></span></p>
+                    <p><span id=np13></span></p>
+                    <p><span id=np14></span></p>
+                    <p><span id=np15></span></p>
+                    <section class="weathersummary">
+                        <h3>Weather Summary</h3>
+                        <p class="label">Currently:<span id="NPcurrent-condition"></span></p>
+                        <p class="label">Temperature:<span id="NPdeg"> &deg;F</span></p>
+                        <p class="label">Humidity:<span id="NPhumidity"></span> %</p>
+                        <p class="label">Wind Speed:<span id="NPmph"> mph</span></p>
+                    </section>
+                </section>
+            </div >
+            <div  class="sdtemp">
+                <img src="images/SanDiegoPan300.jpg" alt="Los Angeles Temple Panoramice" size="100%" srcset="images/SanDiegoPan300.jpg 300w, images/SanDiegoPan600.jpg 600w, images/SanDiegoPan1000.jpg 1000w">    
+                <section class="tempinfo">
+                    <h4>Temple Closures</h4>
+                    <p><span id=sd1></span></p>
+                    <p><span id=sd2></span></p>
+                    <p><span id=sd3></span></p>
+                    <p><span id=sd4></span></p>
+                    <p><span id=sd5></span></p>
+                    <p><span id=sd6></span></p>
+                    <p><span id=sd7></span></p>
+                    <p><span id=sd8></span></p>
+                    <p><span id=sd9></span></p>
+                    <section class="weathersummary">
+                        <h3>Weather Summary</h3>
+                        <p class="label">Currently:<span id="SDcurrent-condition"></span></p>
+                        <p class="label">Temperature:<span id="SDdeg"> &deg;F</span></p>
+                        <p class="label">Humidity:<span id="SDhumidity"></span> %</p>
+                        <p class="label">Wind Speed:<span id="SDmph"> mph</span></p>
+                    </section>
+                </section>
+            </div >
+        </main>
+        <!--footer-->
+        <footer> 
+            <p> <span id="date"></span> | Heavely Hosts Inns | <a href= "https://openweathermap.org/" target="_blank">Weather Info Courtesy of Open Weather Map</a>  |  Terms of Use | <a href="resorces.html">Resorces</a> | &#169;2018</p>
+                
+        </footer>
+            
+        <script src="js/currentDate.js"></script>
+    </body>
+</html>

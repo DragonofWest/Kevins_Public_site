@@ -1,0 +1,36 @@
+@media only screen and (max-width: 34.375em){/* Small CSS */
+
+/* body */
+/* nav */
+nav{ 
+    display:flex;
+    text-align: start;
+}
+nav button{
+    margin:.2rem 2%;
+    background-color: transparent;
+    border:none;
+    font-size:1.36rem;    
+}
+nav.menu{
+background-color:#B5FFE1;
+font-family: 'Sumana', serif;
+height: 5vw; 
+}
+nav ul li a{ 
+    padding:.6rem 2%;
+    text-decoration:none;
+    color:black;
+    font-size:4vw;
+}
+
+nav ul.hide{ display:none;}
+/* main */
+/* home page grid */
+/* temple page*/
+/* contacts */
+/* map */
+
+
+
+}
