@@ -1,7 +1,7 @@
 @media only screen and (max-width: 34.375em){/* Small CSS */
 
 /* body */
-/* nav */
+/* nav */ 
 nav{ 
     display:flex;
     text-align: start;
@@ -27,8 +27,13 @@ nav ul li a{
 nav ul.hide{ display:none;}
 /* main */
 /* home page grid */
-/* temple page*/
+/* Reservations page */
+/* temple page */
+/* services page */
 /* contacts */
+.contactpic {
+    float:none;
+}
 /* map */
 
 

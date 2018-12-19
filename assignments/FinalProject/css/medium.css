@@ -12,7 +12,12 @@
     }
 /* main */
 /* home page grid */
-/* temple page*/
+    .grid1{
+        grid-template-columns: 1fr 1fr;
+    }
+/* Reservations page */
+/* temple page */
+/* services page */
 /* contacts */
 /* map */
 
